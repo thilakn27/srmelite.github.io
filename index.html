@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRM Elite Tax Consultancy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #f6f7fb; color: #222; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #0b4f6c, #1572a1); color: #fff; padding: 24px 16px 40px; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+    .logo { font-size: 20px; font-weight: bold; letter-spacing: 1px; }
+    nav { margin-top: 12px; }
+    nav a { color: #e3f2fd; margin-right: 16px; text-decoration: none; font-size: 13px; }
+    nav a:hover { text-decoration: underline; }
+    .hero { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+    .hero-text { flex: 1 1 260px; }
+    .hero-title { font-size: 26px; margin-bottom: 8px; font-weight: bold; }
+    .hero-sub { font-size: 14px; margin-bottom: 10px; color: #cfe8ff; }
+    .hero-p { font-size: 14px; max-width: 480px; margin-bottom: 16px; }
+    .hero-buttons a { display: inline-block; margin-right: 10px; margin-bottom: 8px; padding: 8px 16px; border-radius: 20px; font-size: 13px; text-decoration: none; }
+    .btn-primary { background: #ffb703; color: #222; }
+    .btn-outline { border: 1px solid #e3f2fd; color: #e3f2fd; }
+    .hero-badge { font-size: 11px; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,0.1); display: inline-block; margin-bottom: 10px; }
+    .hero-side { flex: 1 1 260px; background: rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; font-size: 13px; }
+    .hero-side h3 { font-size: 15px; margin-bottom: 8px; }
+    .hero-side ul { list-style: none; }
+    .hero-side li { margin-bottom: 6px; }
+
+    section { padding: 32px 0; }
+    h2.section-title { font-size: 20px; margin-bottom: 8px; }
+    p.section-sub { font-size: 13px; color: #555; margin-bottom: 18px; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+    .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); font-size: 13px; }
+    .card h3 { font-size: 15px; margin-bottom: 6px; color: #0b4f6c; }
+    .card ul { padding-left: 16px; }
+
+    .why-list li { margin-bottom: 8px; font-size: 13px; }
+
+    .two-col { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: 22px; align-items: flex-start; }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+
+    form { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); font-size: 13px; }
+    label { display: block; margin-bottom: 4px; font-size: 12px; }
+    input, textarea, select { width: 100%; padding: 7px 9px; margin-bottom: 10px; border: 1px solid #d0d7e2; border-radius: 6px; font-size: 13px; }
+    textarea { min-height: 70px; resize: vertical; }
+    button { padding: 8px 16px; border-radius: 20px; border: none; background: #0b4f6c; color: #fff; font-size: 13px; cursor: pointer; }
+    button:hover { background: #073548; }
+
+    footer { background: #0b1727; color: #c3c9d5; padding: 16px; font-size: 11px; text-align: center; }
+
+    .badge-small { display: inline-block; font-size: 11px; padding: 4px 10px; border-radius: 999px; background: #e3f2fd; color: #0b4f6c; margin-bottom: 10px; }
+    .contact-info p { font-size: 13px; margin-bottom: 6px; }
+    .faq-item { margin-bottom: 10px; font-size: 13px; }
+    .faq-item b { display: block; margin-bottom: 2px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">SRM Elite Tax Consultancy</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-badge">Tax · GST · Accounts</div>
+        <h1 class="hero-title">Simple, reliable tax & accounts support.</h1>
+        <p class="hero-sub">All types of tax and accounts related services we provide.</p>
+        <p class="hero-p">
+          We help individuals, professionals, and businesses handle income tax, GST, TDS and bookkeeping
+          with accuracy and on-time filing, so you can focus on growing your business.
+        </p>
+        <div class="hero-buttons">
+          <!-- Replace the # link with your WhatsApp or phone link -->
+          <a href="#" class="btn-primary">Book consultation</a>
+          <a href="#" class="btn-outline">Call / WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <h3>Quick snapshot</h3>
+        <ul>
+          <li>✔ Income tax filing & planning</li>
+          <li>✔ GST registration & returns</li>
+          <li>✔ TDS & payroll compliance</li>
+          <li>✔ Accounting & bookkeeping</li>
+          <li>✔ Bengaluru · Online across India</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our services</h2>
+    <p class="section-sub">End‑to‑end tax and accounts support for individuals, professionals and businesses.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Income tax filing</h3>
+        <ul>
+          <li>ITR filing for salaried, professionals and businesses</li>
+          <li>Tax planning and basic advisory</li>
+          <li>Support for notice responses and rectifications</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>GST registration & returns</h3>
+        <ul>
+          <li>New GST registration</li>
+          <li>Monthly / quarterly return filing</li>
+          <li>Reconciliation & compliance support</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>TDS & compliance</h3>
+        <ul>
+          <li>TDS calculation and return filing</li>
+          <li>Form 16 / Form 16A support</li>
+          <li>Basic payroll compliance guidance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Accounting & bookkeeping</h3>
+        <ul>
+          <li>Day‑to‑day bookkeeping</li>
+          <li>Basic financial statements</li>
+          <li>Simple MIS style reporting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Business support services</h3>
+        <ul>
+          <li>Assistance with registrations through partners</li>
+          <li>Compliance reminders and tracking</li>
+          <li>Basic finance and tax advisory</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <h2 class="section-title">Why choose SRM Elite Tax Consultancy</h2>
+    <p class="section-sub">Focused on clarity, compliance and on‑time delivery.</p>
+    <ul class="why-list">
+      <li>Practical experience with individuals, professionals and SMEs.</li>
+      <li>Single point of contact for tax, GST, TDS and accounts work.</li>
+      <li>Emphasis on timely filing to avoid penalties and interest.</li>
+      <li>Transparent communication and clear fee estimates before work starts.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About SRM Elite Tax Consultancy</h2>
+    <p class="section-sub">
+      Bengaluru‑based support for all your tax and accounts requirements.
+    </p>
+    <p style="font-size:13px; margin-bottom:8px;">
+      SRM Elite Tax Consultancy is focused on providing reliable, structured tax and accounts support
+      to individuals, professionals and businesses. We help manage income tax, GST, TDS and bookkeeping in
+      a systematic and compliant way so you can stay organised and stress‑free.
+    </p>
+    <p style="font-size:13px;">
+      We combine experience in finance, compliance and business operations to offer practical,
+      implementation‑oriented solutions instead of just theoretical advice.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title">Book a consultation</h2>
+      <p class="section-sub">
+        Share your details and we will get in touch to understand your requirement and suggest the right service.
+      </p>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" />
+
+        <label for="phone">Mobile / WhatsApp</label>
+        <input id="phone" type="tel" placeholder="+91‑" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" />
+
+        <label for="service">Type of service</label>
+        <select id="service">
+          <option>Income tax filing</option>
+          <option>GST registration / returns</option>
+          <option>TDS & compliance</option>
+          <option>Accounting & bookkeeping</option>
+          <option>Other / not sure</option>
+        </select>
+
+        <label for="message">Message / details</label>
+        <textarea id="message" placeholder="Briefly describe what you need help with"></textarea>
+
+        <button type="button">Submit (dummy for now)</button>
+      </form>
+    </div>
+    <div>
+      <div class="badge-small">Contact details</div>
+      <div class="contact-info">
+        <p><b>Mobile / WhatsApp:</b> +91‑XXXXXXXXXX</p>
+        <p><b>Email:</b> info@srmelitetax.com</p>
+        <p><b>Location:</b> Bengaluru, Karnataka, India</p>
+      </div>
+
+      <div style="margin-top:20px;">
+        <h3 style="font-size:15px; margin-bottom:8px;">FAQs</h3>
+        <div class="faq-item">
+          <b>Who can use your services?</b>
+          <span>Individuals, salaried employees, freelancers, professionals and businesses.</span>
+        </div>
+        <div class="faq-item">
+          <b>Do you work online?</b>
+          <span>Yes, most services are delivered fully online to clients across India.</span>
+        </div>
+        <div class="faq-item">
+          <b>How are fees decided?</b>
+          <span>Fees depend on type of work, volume and complexity; we share a clear estimate before starting.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> SRM Elite Tax Consultancy · All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
